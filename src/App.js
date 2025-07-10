@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import './components/MinimalRepro.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './components/HomePage';
 import FullCoursePage from './components/FullCoursePage';
