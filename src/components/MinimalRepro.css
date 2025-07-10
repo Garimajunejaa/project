@@ -1,0 +1,19 @@
+/* Minimal CSS to test build */
+
+.test-class {
+  color: #333;
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.test-class:hover {
+  color: #555;
+  background-color: #e0e0e0;
+}
+
+.test-class::after {
+  content: ' - tested';
+  font-weight: bold;
+  color: #999;
+}
