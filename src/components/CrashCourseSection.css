@@ -1,0 +1,182 @@
+.crash-course-section {
+  background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+  padding: 3rem 2rem;
+  margin: 3rem auto;
+  border-radius: 1rem;
+  max-width: 900px;
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1e40af;
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
+  transition: box-shadow 0.3s ease;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.crash-course-section:hover {
+  box-shadow: 0 15px 40px rgba(59, 130, 246, 0.5);
+}
+
+.limited-time-banner {
+  background-color: #fbbf24;
+  color: #1e40af;
+  font-weight: 700;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(251, 191, 36, 0.5);
+  animation: pulse 3s infinite;
+}
+
+.pricing {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  color: #1e40af;
+  text-align: center;
+  text-shadow: 0 2px 6px rgba(59, 130, 246, 0.5);
+}
+
+.features-list {
+  list-style-type: disc;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.125rem;
+  color: #1e40af;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.schedule p {
+  margin: 0.5rem 0;
+  font-weight: 700;
+  font-size: 1.125rem;
+  text-align: center;
+  color: #1e40af;
+}
+
+.inquiry-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inquiry-form input {
+  padding: 1rem;
+  font-size: 1.125rem;
+  border: 2px solid #3b82f6;
+  border-radius: 0.75rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.inquiry-form input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 8px rgba(37, 99, 235, 0.6);
+}
+
+.inquiry-form input.input-error {
+  border-color: #ef4444;
+  box-shadow: 0 0 8px rgba(239, 68, 68, 0.6);
+}
+
+.error-message {
+  color: #ef4444;
+  font-size: 0.875rem;
+  margin-top: -1rem;
+  margin-bottom: 0.75rem;
+  text-align: left;
+}
+
+.inquiry-form button {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 1rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  border-radius: 9999px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.5);
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.inquiry-form button:disabled {
+  background-color: #93c5fd;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.inquiry-form button:hover:not(:disabled),
+.inquiry-form button:focus:not(:disabled) {
+  background-color: #2563eb;
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.7);
+  outline: none;
+}
+
+.thank-you-message {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e40af;
+  margin-top: 2rem;
+  text-align: center;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 4px 12px rgba(251, 191, 36, 0.5);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(251, 191, 36, 0.7);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .crash-course-section {
+    padding: 2rem 1rem;
+  }
+
+  .pricing {
+    font-size: 1.75rem;
+  }
+
+  .inquiry-form input {
+    font-size: 1rem;
+  }
+
+  .inquiry-form button {
+    font-size: 1.125rem;
+  }
+}
